@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex </title>
+    <link rel="stylesheet" href="Pokedex.css">
+    <script src="Pokedex.js" defer></script>
+    <script
+    src="https://kit.fontawesome.com/c8e4d183c2.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+    <section id="landing">
+        <nav>
+          <div class="row">
+            <div class="nav__container">
+              <figure class="logo">
+                <img src="assets/Pokémon_logo.jpg" class="logo__img" alt="" />
+              </figure>
+              <ul class="nav__list list__hover-black">
+                <li class="links" >
+                  <a href="#" class="link link list__effect list__hover-black">Home</a>
+                </li>
+              </ul>
+              <select id="filter" onchange="filterPokemon(event)">
+                <option value="" disabled selected>Sort</option>
+                <option value="LOW_TO_HIGH">Low to high</option>
+                <option value="HIGH_TO_LOW">High to low</option>
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+              </select>
+              <ul class="nav__list list__hover-black">
+              <button class="search__btn" onclick="searchPokemon()">search</button>
+              <button class="btn__menu" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+              </button>
+              <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()" >
+                  <i class="fa fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                  <li class="menu__list">
+                    <a href="#" class="menu__link">Home</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#" class="menu__link">ID+</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#" class="menu__link">Z-A</a>
+                  </li>
+                  <li class="menu__list">
+                    <a href="#" class="menu__link">Search</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </nav>
+    <div class="loading"></div>
+  </section>
+  <body>
+    <main>
+    <section>
+      <div class="title">
+        <h1>Pokemon Dex-Cards</h1>
+      </div>
+        <div class="pokemon__container">
+          <div class="pokemon__wrapper">
+            <div id="pokemons">
+          
+            </div>
+          </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+      <div class="row">
+        <div class="footer__container">
+          <div class="footer">
+            <figure>
+              <img
+              src="assets/logo.png"
+              class="footer__img"
+              alt="Footer Logo"
+              />
+            </figure>
+            <ul class="footer__list">
+              <li class="footer__links">
+                <a href="#" class="footer__link link list__effect list__hover-white">Home</a>
+              </li>
+              <li class="footer__links">
+                <a href="" class="footer__link link list__effect list__hover-white">About</a>
+              </li>
+              <li class="footer__links">
+                <a href="" class="footer__link link list__effect list__hover-white">Contact</a>
+              </li>
+            </ul>
+            <div class="copyright">&COPY; 2024 Copyright by Pokemon</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
