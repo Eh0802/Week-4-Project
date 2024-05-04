@@ -105,7 +105,7 @@ window.addEventListener("load", () => {
 } )
 
 function searchPokemon() {
-    window.location.href = "http://127.0.0.1:5500/Search.html";
+    window.location.href = `${window.location.origin}/Search.html`;
 }
 
 
