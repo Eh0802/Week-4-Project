@@ -104,9 +104,9 @@ window.addEventListener("load", () => {
     // })
 } )
 
-function searchPokemon() {
-    window.location.href = `${window.location.origin}/Search.html`;
-}
+// function searchPokemon() {
+//     window.location.href = `${window.location.origin}/Search.html`;
+// }
 
 
 featchPokemon();
