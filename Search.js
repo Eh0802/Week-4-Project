@@ -58,5 +58,5 @@ window.addEventListener("load", () => {
 
 function backToHomePage() {
     // window.location.href = `http://127.0.0.1:5500/index.html`;
-    console.log(window.location)
+    // console.log(window.location)
 }
