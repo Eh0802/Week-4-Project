@@ -98,15 +98,9 @@ window.addEventListener("load", () => {
     const loading = document.querySelector(".loading");
 
     loading.classList.add("loader-hidden");
-
-    // loading.addEventListener("transitionend", () => {
-    //     document.body.removeChild("loading");
-    // })
 } )
 
-// function searchPokemon() {
-//     window.location.href = `${window.location.origin}/Search.html`;
-// }
+
 
 
 featchPokemon();
